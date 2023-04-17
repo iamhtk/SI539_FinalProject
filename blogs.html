@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./css/style.css" rel="stylesheet"/>
+    <title>My Music</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to Main Content</a>
+    <header>
+      <nav>
+        <div class="brand"><h1> Blogs! </h1></div>
+        
+        <div class="menuicon"><i onclick="showMenu()" class="fa fa-bars"></i></div>
+        <ul id="menu">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="genres.html">Genres</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li><a class="active" href="blogs.html">Blogs</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      
+      <!-- <div class="blogs-heading">
+        EDM Blogs
+      </div> -->
+      <div class="blogs">
+        <!-- BLOG 1 -->
+        <div class="blog">
+          <div class="blog-heading">
+            1. EDM.com
+          </div>
+          <div class="blog-title" onclick="showBlog(1)">
+            <i class='fas fa-angle-down'></i>Claiming to be the world’s foremost authority on EDM, EDM.com
+            certainly puts in the work for it.
+          </div>
+          <div id="blog-1" class="blog-contents">
+            <img src="./images/1_edmdotcom.jpeg" width="100%"  alt="edm.com">
+            <p>Claiming to be the world’s foremost authority on EDM, EDM.com
+              certainly puts in the work for it. The blog site is chock full of
+              music news, artist spotlights and interviews with rising stars.
+              Their coverage is wide and comprehensive, so definitely check them
+              out!</p>
+          </div>
+        </div>
+
+        <!-- BLOG 2 -->
+        <div class="blog">
+          <div class="blog-heading">
+            2. DJ Mag
+          </div>
+          <div class="blog-title" onclick="showBlog(3)">
+            <i class='fas fa-angle-down'></i>Founded in 1991, DJ Mag primarily focuses on the bustling British
+            EDM scene, though they cover other scenes as well.
+          </div>
+          <div id="blog-2" class="blog-contents">
+            <img src="./images/3_dj-mag.jpeg" width="100%"  alt="dj mag">
+            Founded in 1991, DJ Mag primarily focuses on the bustling British
+            EDM scene, though they cover other scenes as well. Their featured
+            editorials are always excellently written and informative, giving
+            great advice to burgeoning EDM stars, DJ Mag is easily one of the
+            Best EDM Blogs of 2022.
+          </div>
+        </div>
+
+        <!-- BLOG 3 -->
+        <div class="blog">
+          <div class="blog-heading">
+            3. Mixmag
+          </div>
+          <div class="blog-title" onclick="showBlog(2)">
+            <i class='fas fa-angle-down'></i>A pioneer of popularizing EDM, Mixmag is a British electronic dance
+            and clubbing magazine. 
+          </div>
+          <div id="blog-3" class="blog-contents">
+            <img src="./images/2_mixmag.jpeg" width="100%"  alt="mixmag">
+            A pioneer of popularizing EDM, Mixmag is a British electronic dance
+            and clubbing magazine. Starting as a print based magazine in 1983
+            London, they’re now a hotbed for promising new British EDM artists.
+            With news and music highlights every day, it’s a must visit for EDM
+            fans.
+
+          </div>
+        </div>
+
+        <!-- BLOG 4 -->
+
+        <div class="blog">
+          <div class="blog-heading">
+            4. Dancing Astronaut
+          </div>
+          <div class="blog-title" onclick="showBlog(4)">
+            <i class='fas fa-angle-down'></i>Dancing Astronaut is a digital magazine based in New York. Their
+            main target is the American EDM scene
+          </div>
+          <div id="blog-4" class="blog-contents">
+            <img src="./images/4_dancing-astronaut.jpeg" width="100%"  alt="dancing astronaut">
+            Dancing Astronaut is a digital magazine based in New York. Their
+            main target is the American EDM scene, where they compile as much
+            information as possible on releases and popular artists. They
+            actively feature their content on social media, with some cultural
+            coverage in the mix.
+          </div>
+        </div>
+
+        <!-- BLOG 5 -->
+        <div class="blog">
+          <div class="blog-heading">
+            5. EDM Sauce
+          </div>
+          <div class="blog-title" onclick="showBlog(5)">
+            <i class='fas fa-angle-down'></i>EDM Sauce are some of the best when it comes to pure EDM coverage.
+          </div>
+          <div id="blog-5" class="blog-contents">
+            <img src="./images/5_edm-sauce.jpeg" width="100%"  alt="edm sauce">
+            EDM Sauce are some of the best when it comes to pure EDM coverage.
+            The blog is one of the most active, constantly keeping tabs on EDM
+            releases worldwide. They highlight growing artists in their new
+            music columns, as well as offer equipment advice and notes.
+          </div>
+        </div>
+
+        <!-- BLOG 6 -->
+        <div class="blog">
+          <div class="blog-heading">
+            6. Earmilk
+          </div>
+          <div class="blog-title" onclick="showBlog(6)">
+            <i class='fas fa-angle-down'></i>Straddling the line between underground and mainstream is Earmilk.
+          </div>
+          <div id="blog-6" class="blog-contents">
+            <img src="./images/6_earmilk.jpeg" width="100%"  alt="earmilk">
+            Straddling the line between underground and mainstream is Earmilk.
+            While their main genre is EDM, Earmilk also covers other genres at
+            times. They have a quality pedigree they maintain when covering
+            music releases, so you’re bound to find something good here.
+          </div>
+        </div>
+
+        <!-- BLOG 7 -->
+        <div class="blog">
+          <div class="blog-heading">
+            7. Magnetic Magazine
+          </div>
+          <div class="blog-title" onclick="showBlog(7)">
+            <i class='fas fa-angle-down'></i>Magnetic Magazine fashions itself as a lifestyle magazine based
+            around EDM culture.
+          </div>
+          <div id="blog-7" class="blog-contents">
+            <img src="./images/7_magnetic-magazine.jpeg" width="100%"  alt="magnetic magazine">
+            Magnetic Magazine fashions itself as a lifestyle magazine based
+            around EDM culture. While there are many articles about artists,
+            they also feature lighter articles about fashion and music
+            festivals.
+          </div>
+        </div>
+        
+        <!-- BLOG 8 -->
+        <div class="blog">
+          <div class="blog-heading">
+            8. EDM Identity
+          </div>
+          <div class="blog-title" onclick="showBlog(8)">
+            <i class='fas fa-angle-down'></i>Putting quality first is the keyword of EDM Identity. 
+          </div>
+          <div id="blog-8" class="blog-contents">
+            <img src="./images/8_edm-identity.jpeg" width="100%"  alt="edm identity">
+            Putting quality first is the keyword of EDM Identity. Their
+            excellent reporting is backed by their comprehensive list of music
+            festivals, so it’s a great blog to catch up on new concerts near
+            you.
+          </div>
+        </div>
+
+        <!-- BLOG 9 -->
+        <div class="blog">
+          <div class="blog-heading">
+            9. We Rave You
+          </div>
+          <div class="blog-title" onclick="showBlog(9)">
+            <i class='fas fa-angle-down'></i>We Rave You takes things in a slightly different direction. W
+          </div>
+          <div id="blog-9" class="blog-contents">
+            <img src="./images/9_we-rave-you.jpeg" width="100%"  alt="we rave you">
+            We Rave You takes things in a slightly different direction. While
+            they still have an EDM focus, the site also does a bit of
+            everything. There’s a nice bit of variety in their content, breaking
+            up the monotony a little and keeping things engaging.
+          </div>
+        </div>
+
+        <!-- BLOG 10 -->
+        <div class="blog">
+          <div class="blog-heading">
+            10. EDMTunes
+          </div>
+          <div class="blog-title" onclick="showBlog(10)">
+            <i class='fas fa-angle-down'></i>EDMTunes is a site that puts the music first.
+          </div>
+          <div id="blog-10" class="blog-contents">
+            <img src="./images/10_edm-tunes.jpeg" width="100%"  alt="edm tunes">
+            EDMTunes is a site that puts the music first. Constant coverage on
+            new releases and festivals make them a good place to catch up. On
+            top of that, their submission column lets readers send in their own
+            music to be featured, which is nice.
+          </div>
+        </div>
+
+        <!-- BLOG 11 -->
+        <div class="blog">
+          <div class="blog-heading">
+            11. Your EDM
+          </div>
+          <div class="blog-title" onclick="showBlog(11)">
+            <i class='fas fa-angle-down'></i>Your EDM is a great little site that’s a touch more personal than
+            more other EDM blogs. 
+          </div>
+          <div id="blog-11" class="blog-contents">
+            <img src="./images/11_youredm.jpeg" width="100%"  alt="your edm">
+            Your EDM is a great little site that’s a touch more personal than
+            more other EDM blogs. On top of their well written news articles,
+            they also have an active Discord server for fans to mingle in.
+          </div>
+        </div>
+
+        <!-- BLOG 12 -->
+        <div class="blog">
+          <div class="blog-heading">
+            12. Beatportal
+          </div>
+          <div class="blog-title" onclick="showBlog(12)">
+            <i class='fas fa-angle-down'></i>Beatportal is another site with a big eye for new and upcoming
+            artists.
+          </div>
+          <div id="blog-12" class="blog-contents">
+            <img src="./images/12_beatportal.jpeg" width="100%"  alt="beatportal">
+            Beatportal is another site with a big eye for new and upcoming
+            artists. While they have articles and features, they also have
+            Beatport Next, a program that helps the development of new EDM
+            artists.
+          </div>
+        </div>
+
+        <!-- BLOG 13 -->
+        <div class="blog">
+          <div class="blog-heading">
+            13. EDM Reviewer
+          </div>
+          <div class="blog-title" onclick="showBlog(13)">
+            <i class='fas fa-angle-down'></i>EDM Reviewer, as the name suggests, is a blog that reviews new EDM
+            releases as their main content.
+          </div>
+          <div id="blog-13" class="blog-contents">
+            <img src="./images/13_edm-reviewer.jpeg" width="100%"  alt="edm reviewer">
+            EDM Reviewer, as the name suggests, is a blog that reviews new EDM
+            releases as their main content. They do cover releases as well,
+            though the reviews are what set them apart from others. The writing
+            is excellent, and we highly recommend adding them to your regular
+            lineup.
+          </div>
+        </div>
+        
+        <!-- BLOG 14 -->
+        <div class="blog">
+          <div class="blog-heading">
+            14. Run the Trap
+          </div>
+          <div class="blog-title" onclick="showBlog(14)">
+            <i class='fas fa-angle-down'></i>Founded in 2012, Run the Trap mixes rap, trap and EDM coverage
+            together. 
+          </div>
+          <div id="blog-5" class="blog-contents">
+            <img src="./images/14_run-the-trap.jpeg" width="100%"  alt="run the trap" >
+            Founded in 2012, Run the Trap mixes rap, trap and EDM coverage
+            together. Their articles and news updates are quality stuff, and
+            their EDM centric pieces are very good as well. A good site if you
+            like a bit of variety.
+          </div>
+        </div>
+
+      </div>
+    </main>
+    <footer>
+      <p class="thanks">
+        This is my SI 539 Final Project ©
+      </br>
+      Thanks for visiting!
+      </p>
+      <p class="thanks">Orginal content created by Hrithik Sanyal 2023</p>
+      <a class="backtotop" href="#main">Back to Top</a>
+    </footer>
+    <script src="./js/vanilla-tilt.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".box-image"), {
+        max: 5,
+        speed: 400,
+        glare: true,
+        "max-glare":0.3,
+      });
+    </script>
+  </body>
+</html>

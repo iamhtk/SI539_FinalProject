@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./css/style.css" rel="stylesheet"/>
+    <title>My Music</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to Main Content</a>
+    <header>
+      <nav>
+        <div class="brand"><h1> About me </h1></div>
+        <div class="menuicon"><i onclick="showMenu()" class="fa fa-bars"></i></div>
+        <ul id="menu">
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="genres.html">Genres</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a class="active" href="aboutme.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="aboutme">
+        <div class="aboutme-box-image">
+          <img src="./images/me2.png"  alt="my picture">
+        </div>
+        <div class="aboutme-box-biodata">
+          <div class="artists-bio">
+            <p>Hi, I'm Hrithik Sanyal a Human-Computer Interaction & UX Student
+              at University of Michigan-Ann Arbor. I'm exploring the world of
+              User Experience and Product Designing. I have experience doing
+              user research, creating app design, web design, and visual design.
+              I am currently looking for an internship or job for the summer of
+              2023 to further build on my Product/UX design & research,
+              interaction design, and product management skills. I am looking
+              forward to connecting with you!</p>
+            <p>iamhtk@umich.edu</p>
+            <p>I aspire to craft meaningful interactions between people and
+              technology and solve problems in creative, empathetic ways. I
+              enjoy creating digital illustrations/designs and music in my free
+              time.​​​​​​​</p>
+            <p> I come from a multidisciplinary background, with experience in
+              programming and designing.​​​​​​​</p>
+            <p> I will be a Graduate Student Instructor for SI 658: Information
+              Architecture this Winter semester.​​​​​​​</p>
+            <p>Born and raised in Jabalpur, India, I completed my bachelor's in
+              Electronics & Telecommunications from Bharati Vidyapeeth
+              University.
+              I came to the U.S. for my Master's. While adjusting to a different
+              culture was challenging, my journey as an international student
+              taught me to face challenges with versatility, empathy, and an
+              open mind. </p>
+            <p>I aim to leverage these strengths into my design and amplify the
+              positive impact of technology.</p>
+
+          </div>
+          <div class="artists-bio-contents">
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- <div class="aboutme">
+        <div class="aboutme-box-image">
+          <img src="./images/MGlifestyle-3.jpg">
+        </div>
+        <div class="aboutme-box-biodata">
+          <div class="artists-bio">
+            Hi, I'm Hrithik Sanyal a Human-Computer Interaction & UX Student at University of Michigan-Ann Arbor. I'm exploring the world of User Experience and Product Designing.
+          </div>
+          <div class="artists-bio-contents">
+            Hello, my name is Hrithik, and I am a student at the University of Michigan-Ann Arbor. I am studying Human-Computer Interaction (HCI) and User Experience (UX). I have experience doing user research, creating app design, web design, and visual design. I am currently looking for an internship or job for the summer of 2023 to further build on my Product/UX design & research, interaction design, and product management skills. I am looking forward to connecting with you!iamhtk@umich.edu
+          </div>
+        </div>
+      </div> -->
+    </main>
+
+
+    <footer>
+      <p class="thanks">
+        This is my SI 539 Final Project ©
+      </br>
+      Thanks for visiting!
+      </p>
+      <p class="thanks">Orginal content created by Hrithik Sanyal 2023</p>
+      <a class="backtotop" href="#main">Back to Top</a>
+    </footer>
+    <script src="./js/vanilla-tilt.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".box-image"), {
+        max: 5,
+        speed: 400,
+        glare: true,
+        "max-glare":0.3,
+      });
+    </script>
+
+  </body>
+</html>

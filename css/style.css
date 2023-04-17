@@ -1,0 +1,431 @@
+html {
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-repeat: no-repeat;
+}
+
+html {
+    scroll-behavior: smooth;
+    line-height: 1.2;
+    margin: inherit;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.brand {
+    border-radius: 20px;
+}
+/* SKIP TO CONTENT CSS */
+a.skip {
+    background: black;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    left: -400px;
+    top: -200px;
+}
+
+a.skip:focus {
+    top: 20px;
+    left: 0px;
+    background-color: black;
+    color: white;
+}
+/* NAV CSS */
+
+nav {
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255,0.1);
+    display: grid;
+    grid-template-columns: auto auto;
+    border-radius: 20px;
+    border-bottom: 2px solid;
+    padding-right: 10px;
+    color: white;
+    font-weight: bold;
+}
+nav .brand {
+    justify-self: left;
+    padding-left:30px;
+}
+nav .menuicon {
+    justify-self: right;
+    align-self: center;
+    padding-right:10px;
+}
+nav h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 0px;
+}
+nav ul {
+    padding: 20px;
+    display: none;
+    transition: all .3s;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+nav #menu {
+    padding: 10px;
+}
+
+nav img {
+    width:30px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    transition: 1s ease;
+
+}
+
+nav .active {
+    background-color: #0b8793;
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: #670662;
+    color: white;
+
+}
+/* OVERVIEW CSS */
+.overview-1, .overview-2 {
+    display: grid;
+    grid-template-columns: auto;
+    border-radius: 20px;
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255,0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.overview-intro, .overview-genre {
+    border-radius: 20px;
+    margin-right: 5px;
+    
+}
+.heading {
+    border-bottom:2px solid #FFFFFF;
+    padding:10px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    color:#fff;
+}
+.contents {
+    color: #fff;
+    padding: 10px;
+}
+
+.index-image {
+    width: 100%;
+}
+
+/* ******************** GENRE CSS ******************** */
+.genres {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    min-height: 500px;
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255,0.1);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding:10px;
+    margin-right: 5px;
+    transition:all 0.3s;
+
+    
+    padding: 15px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.genre {
+    position: absolute;
+    text-align: center;
+    padding: 10px;   
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+}
+
+/* ASK SIR */
+.genres-heading{
+    position: absolute;
+    text-align: center;
+    padding: 10px;   
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+}
+
+.genre-image {
+    width: 100%;
+    align-self: center;    
+}
+
+.genre-content {
+    padding: 30px;
+    align-self: center;   
+}
+
+
+.genre-name {
+    left: 40%;
+    top:200px;
+}
+.genre-1 {
+    left: 5%;
+    top:200px;
+}
+.genre-2 {
+    left: 75%;
+    top:200px;
+}
+.genre-3 {
+    left: 60%;
+    top:300px;
+}
+.genre-4 {
+    left: 30%;
+    top:300px;
+}
+.genre-5 {
+    left: 45%;
+    top:400px;
+}
+.genre-6 {
+    left: 30%;
+    top:100px;
+}
+.genre-7 {
+    left: 60%;
+    top:100px;
+}
+
+.genre-heading {
+    /* border-bottom:2px solid #FFFFFF; */
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    color:#fff;
+}
+
+
+
+/* ******************** ARTISTS CSS ******************** */
+.artist, .artist-one {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.box {
+    /* background-image: linear-gradient(#fff, #ce17c8); */
+    /* box-shadow: 1px 1px 1px #f067eb; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding:10px;
+    margin-right: 5px;
+    transition:all 0.3s;
+
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255,0.1);
+    border-radius: 20px;
+    padding: 15px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.box-image img {
+    width:100%;
+}
+.artists-bio {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color:#fff;
+    padding:10px;
+}
+.artist-heading {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    color:#fff;
+}
+.artists-bio-contents {
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+}
+
+.artists-heading {
+    border-bottom:2px solid #FFFFFF;
+    padding:10px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    color:#fff;
+}
+
+/* ******************** BLOG CSS ******************** */
+.blogs {
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255,0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding:10px;
+    border-radius: 20px;
+}
+.blog {
+    box-shadow: 2px 2px 5px #FFFFFF;
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255,0.1);
+    margin:20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.blog-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding:20px;
+    cursor: pointer;
+    color: white
+}
+.blog-title i {
+    padding-right: 10px;
+    color: white
+}
+.blog-contents {
+    padding: 20px;
+    display: none;
+    transition: max-height 0.2s ease-out;
+    color: white
+}
+#blog-1 {
+display: block;
+}
+
+
+.blogs-heading {
+    border-bottom:2px solid #FFFFFF;
+    padding:10px;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    color:#fff;
+}
+
+.blog-heading {
+    border-bottom:2px solid #FFFFFF;
+    padding:10px;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    color:#fff;
+    text-align: left;
+}
+
+
+/* ******************** ABOUTME CSS ******************** */
+.aboutme {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.aboutme-box-image {
+    text-align: center;
+}
+.aboutme-box-image img {
+    clip-path: circle(30% at 54% 45%);
+    width:100%;
+}
+
+/* FOOTER CSS */
+footer {
+    border-radius: 20px;
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255,0.1);
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto;
+    border-bottom: 2px solid #593361;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    
+}
+footer .backtotop {
+    text-align: right;
+    padding-right: 30px;
+    color:#FFFFFF;
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+footer .thanks {
+    padding-right: 30px;
+    color:#FFFFFF;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+@media screen and (min-width:768px) {
+    .grid-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .para-flex-1, .para-flex-2, .para-flex-3 {
+        flex:50%;
+    }
+}
+@media screen and (min-width:1281px) {
+    nav, main, footer {
+        width:80%;
+        margin: 0px auto;
+    }
+    nav ul {
+        margin: 0;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style: none;
+        align-self: center;
+        justify-self: end;
+        padding-right: 30px;
+    }
+    nav .menuicon {
+        display: none;
+    }
+    .artist {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .aboutme {
+        grid-template-columns: auto auto;
+    }
+    .overview-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
