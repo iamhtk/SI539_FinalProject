@@ -34,10 +34,10 @@
     <main id="main">
       <div class="overview-1">
         <div class="overview-intro">
-          <div class="heading">
+          <!-- <div class="heading">
             Electronic Dance Music (EDM)
-          </div>
-          <div class="index-image">
+          </div> -->
+          <div class="heading index-image">
             <img src="./images/avicii_live3.jpeg" width="100%" alt="avicii at umf15">
           </div>
           <div class="contents">
@@ -101,48 +101,19 @@
           </div>
         </div>
       </div>
+
       <div class="overview-2">
         <div class="overview-genre">
           <div class="heading">
-            Images
+            Genres and Sub-genres
           </div>
-          <div class="genres">
-            <div class="genre genre-name">HOUSE</div>
-            <div class="genre genre-1">DEEP</div>
-            <div class="genre genre-2">TRIBAL</div>
-            <div class="genre genre-3">PROGRESSIVE</div>
-            <div class="genre genre-4">TECH</div>
-            <div class="genre genre-5">FUTURE</div>
-            <div class="genre genre-6">HARD</div>
-            <div class="genre genre-7">ELECTRO</div>
-          </div>
+          <a href="genres.html"> <img src="./images/top 10.png" width="100%" alt="top10 genres"></a>
         </div>
         <div class="overview-blogs">
           <div class="heading">
-            Blogs Lorem Parem
+            Top Artists
           </div>
-          <div class="contents">
-            <p>Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem
-              Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem
-              Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem
-              Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem
-              Lorem Parem Lorem Parem </p>
-            <p>Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem
-              Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem
-              Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem
-              Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem
-              Lorem Parem Lorem Parem </p>
-            <p>Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem
-              Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem
-              Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem
-              Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem
-              Lorem Parem Lorem Parem </p>
-            <p>Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem
-              Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem
-              Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem
-              Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem Lorem Parem
-              Lorem Parem Lorem Parem </p>
-          </div>
+            <a href="artists.html"> <img src="./images/all_artists.webp" width="100%" alt="top10 genres"></a>
         </div>
       </div>
     </main>
@@ -154,12 +125,13 @@
       </br>
       Thanks for visiting!
       </p>
-      <p class="thanks">Orginal content created by Hrithik Sanyal 2023</p>
+      <p class="thanks">Original content created by Hrithik Sanyal 2023</p>
       <a class="backtotop" href="#main">Back to Top</a>
     </footer>
-    <script src="./js/script.js"></script>
-    <script>
-      VanillaTilt.init(document.querySelectorAll(".card"), {
+      <script src="./js/vanilla-tilt.js"></script>
+      <script src="./js/script.js"></script>
+      <script>
+      VanillaTilt.init(document.querySelectorAll(".heading, .overview-blogs, .overview-genre"), {
         max: 5,
         speed: 400,
         glare: true,
